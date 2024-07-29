@@ -17,11 +17,11 @@ public class User implements Serializable {
 
     }
 
-    public User(String id, String name, String password, String email, UserType userType) {
+    public User(String id, String name, String email, String password, UserType userType) {
         this.id = id;
         this.name = name;
-        this.password = password;
         this.email = email;
+        this.password = password;
         this.userType = userType;
     }
 
@@ -70,8 +70,8 @@ public class User implements Serializable {
         return "User{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", password='" + "password"+ '\'' +
                 ", email='" + email + '\'' +
+                ", password='" + "password"+ '\'' +
                 ", userType=" + userType +
                 '}';
     }
